@@ -34,7 +34,7 @@ button:hover{
 
 .products{
     border: solid 3px black;
-    background-color: rgb(240, 166, 69);
+   background-color: darkgray;
     height: 6in;
     margin: 5px;
     padding: 5px;
