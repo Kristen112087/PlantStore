@@ -2,7 +2,6 @@ body{
     margin: 10px;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
     background-image: url(images/plants3.jpg);
     background-size: 6in;
     background-attachment: fixed;
@@ -23,29 +22,40 @@ button{
     background-color: rgb(195, 226, 192);
 }
 
-button:hover{
-    color: #ffffff;
-}
 
 .buttontext{
     background-color: rgb(131, 167, 128) !important;
     border-color: rgb(131, 167, 128) !important; 
+    position: relative;
 }
 
 .products{
+    position: relative;
     border: solid 3px black;
-   background-color: darkgray;
     height: 6in;
     margin: 5px;
     padding: 5px;
-    border-radius: 50% 49% 50% 50% / 10% 10% 10% 10% ;
+    border-radius: 50% 50% 50% 50% / 10% 10% 10% 10% ;
     text-align: center;
     float: left;
-    opacity: 90%;
+}
+
+.products::before {    
+    content: "";
+    border-radius: 50% 50% 50% 50% / 10% 10% 10% 10% ;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 60%;
 }
 
 .plantpictures{
     max-height: 200px;
+    position: relative;
     
 }
 
@@ -62,7 +72,41 @@ button:hover{
 .title{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #3b9139;
-    font-size: 5in;
-    font-weight: 900;
     text-shadow: 4px 4px 4px  #4e4e4e;
+}
+
+h1{
+    font-size: 150px !important;
+    text-align: center;
+    font-weight: 800 !important;
+}
+
+.contactusform{
+    position: relative;
+    border: white 4px solid;
+    border-radius: 15px;
+    padding: 10px;
+    width: 50%;
+}
+
+.contactusform::before {    
+    content: "";
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 60%;
+}
+
+h2{
+    font-size: 50px !important;
+    position: relative;
+}
+
+p{
+    position: relative;
 }
